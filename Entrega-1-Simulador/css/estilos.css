@@ -1,0 +1,17 @@
+.titulo__estilos{
+    color: blue;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline black;
+}
+
+.texto__principal{
+    color: #1dc82e;
+    font-size: 1.5rem;
+    text-decoration: underline ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
