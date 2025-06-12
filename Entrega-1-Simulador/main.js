@@ -33,7 +33,7 @@
     const numeroCorrecto = numeroGenerado();
     let intentos = 0;
     let numeroElegido = pedirNumero();
-    let intentosMaximos = 5;
+    let intentosMaximos = 7;
 
     while (numeroElegido !== numeroCorrecto && intentos < intentosMaximos) {
       if (numeroElegido > numeroCorrecto && numeroElegido <= 100) {
