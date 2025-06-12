@@ -37,12 +37,14 @@
 
     while (numeroElegido !== numeroCorrecto && intentos < intentosMaximos) {
       if (numeroElegido > numeroCorrecto && numeroElegido <= 100) {
-        alert("Muy alto. Intenta de nuevo. Intentos restantes: " + (intentosMaximos - intentos - 1));
         intentos++;
+        alert("Muy alto. Intenta de nuevo. Intentos restantes: " + (intentosMaximos - intentos));
+        
       } 
       else if (numeroElegido < numeroCorrecto && numeroElegido >= 1) {
-        alert("Muy bajo. Intenta de nuevo. Intentos restantes: " + (intentosMaximos - intentos - 1));
-        intentos++;
+         intentos++;
+        alert("Muy bajo. Intenta de nuevo. Intentos restantes: " + (intentosMaximos - intentos));
+       
       } 
       else if (isNaN(numeroElegido) || numeroElegido > 100 || numeroElegido < 1) {
         alert("Introduce un número válido entre 1 y 100.");
@@ -51,7 +53,7 @@
       if (intentos < intentosMaximos) {
        numeroElegido = pedirNumero();
       }
-      
+                     
       
     }
 
