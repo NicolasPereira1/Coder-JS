@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulador de Interés Compuesto con JS Básico</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+   <script src="simulador.js" defer></script>
+</head>
+<body>
+  <h1>Simulador de Interés Compuesto</h1>
+
+  <div class="Contenedor__centro">
+  <label for="monto">Monto a invertir:</label>
+  <input type="number" id="monto" placeholder="Ej: 1000" />
+</div>
+
+  <div class="Contenedor__centro">
+  <label for="interes">Ganancia anual (%) estimada:</label>
+  <input type="number" id="interes" placeholder="Ej: 5"/>
+</div>
+
+  <div class="Contenedor__centro">
+  <label for="meses">Tiempo (meses):</label>
+  <input type="number" id="meses" placeholder="Ej: 12" />
+</div>
+
+  <div class="Contenedor__centro">
+    <button id="calcularBtn">Calcular</button>
+  </div>
+  
+<div class="Contenedor__centro"></div>
+  <h2 id="resultado"></h2>
+</div>
+
+<div class="Contenedor__centro">
+  <h3>Historial de cálculos.</h3>
+  <ul id="historial"></ul>
+</div>
+ 
+</body>
+</html>
